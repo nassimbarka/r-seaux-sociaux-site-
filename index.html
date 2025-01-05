@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0061)file:///C:/Users/ansse/Downloads/Nouveau%20dossier/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<script>
+function valider(){
+    var host=document.f.host.value;
+var port=document.f.port.value;
+var user=document.f.user.value;
+var password=document.f.password.value;
+var link="http://"+host+":"+port+"/get.php?username="+user+"&password="+password+"&type=m3u";
+
+    document.getElementById("link").innerHTML="<a href='"+link+"'>Télecharger Le Fichier M3u</a>";
+  
+}
+
+</script>
+</head><body><form name="f" onsubmit="return false">
+    <table>
+        <tbody><tr><th colspan="2">Xtream -&gt; M3u Converter</th></tr>
+        <tr><td><label for="host">Host:</label></td><td><input type="text" name="host" id=""></td></tr>
+        <tr><td><label for="port">Port:</label></td><td><input type="text" name="port" id=""></td></tr>
+        <tr><td><label for="user">User:</label></td><td><input type="text" name="user" id=""></td></tr>
+        <tr><td><label for="password">Password:</label></td><td><input type="text" name="password" id=""></td></tr>
+   <tr><td colspan="2" align="center"> 
+    
+    <input type="button" value="Xtream -&gt; M3u" onclick="valider()">
+    
+    </td></tr>
+   <tr><td>Lien</td><td><div id="link"></div></td></tr>
+    </tbody></table>
+</form>
+
+</body></html>

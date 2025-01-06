@@ -1,46 +1,79 @@
+/* Style global pour la page */
 body {
+    background-color: black;  /* Fond noir */
+    color: white;             /* Texte en blanc */
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
+/* En-tête */
 header {
-    background-color: white;
-    color: #fff;
-    border: 2px solid #0077cc;
-    padding: 1rem;
+    background-color: #222;  /* Fond gris très foncé */
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
-header nav ul {
-    list-style-type: none;
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
-header nav ul li {
-    display: inline;
-    margin-right: 15px;
+
+nav ul li {
+    margin: 0 10px;
 }
-header nav ul li a {
-    color: #fff;
+
+nav ul li a {
+    color: white;
     text-decoration: none;
 }
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
 section {
     padding: 20px;
+    margin: 20px auto;
+    background-color: #111;  /* Fond noir légèrement différent */
+    border: 1px solid white;
+    border-radius: 8px;
 }
+
+/* Titres */
 h1, h2 {
     color: white;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
+
+/* Tableaux */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
+
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid white;
 }
+
 th, td {
-    padding: 8px;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Pied de page */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
